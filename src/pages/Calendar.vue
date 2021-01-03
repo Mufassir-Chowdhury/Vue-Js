@@ -21,6 +21,7 @@
 
 <script>
 export default {
+    name: 'Calendar',
     data() {
         return {
             currentDate: new Date().getDate(),

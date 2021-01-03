@@ -1,23 +1,37 @@
 <template>
-<Appheader/>
-<div class="min-w-full">
-  <calendar/>
-  <!-- <dc-heros/> -->
-</div>
+  <Appheader/>
+  <div id="nav">
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import Appheader from './components/Appheader.vue';
-import Calendar from './components/Calendar.vue';
-// import DcHeros from './components/DcHeros.vue';
+import Appheader from './components/Appheader';
 
 export default {
-  components: { Appheader, Calendar },
-  name: 'App',
-  
+  components: { Appheader },
 }
 </script>
 
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>

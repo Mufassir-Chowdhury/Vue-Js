@@ -1,8 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import DcHeros from '../pages/DcHeros';
 import Calendar from '../pages/Calendar';
-// import Home from '../pages/Home';
+import Home from '../pages/Home';
 import Markdown from '../pages/Markdown';
+import Slider from '../pages/Slider';
 
 const routes = [
   {
@@ -15,15 +16,20 @@ const routes = [
     name: 'Calendar',
     component: Calendar
   },
-  // {
-  //   path: '/',
-  //   name: 'Home',
-  //   component: Home
-  // },
   {
-    path: './markdown',
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/markdown',
     name: 'Markdown',
     component: Markdown
+  },
+  {
+    path: '/slider',
+    name: 'Slider',
+    component: Slider
   }
 ]
 
